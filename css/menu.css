@@ -1,0 +1,179 @@
+.header-s {
+  /*   min-height: 150px; */
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    background-color: #631819;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 98px;
+    width: 100%;
+}
+
+.header__nav {
+    flex: 1;
+}
+
+.menua__menu {
+    display: flex;
+    gap: 5.2rem;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.menu__link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Verdana-Bold', sans-serif;
+    transition: color 0.3s;
+}
+
+.logo {
+    flex: 1;
+    text-align: center;
+}
+
+.Mesopotamia {
+    color: white;
+    text-decoration: none;
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.header__text {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.header__title-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.header_text_h1 {
+    font-size: 3.9rem;
+    max-width: 596px;
+    margin: 0 auto;
+}
+
+.menu__inner {
+    padding: 30px 0;
+}
+
+.menu__dropdown {
+    position: relative;
+}
+
+.menu__title {
+    font-size: 3.4rem;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+main {
+    /*  background-color: #696565; */
+    background-image: url(/image/main.jpg);
+}
+
+/* Скрываем все разделы меню по умолчанию */
+.menu__breakfast {
+    display: none;
+}
+
+/* Показываем активный раздел */
+.menu__breakfast.active {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    padding: 5rem 0;
+}
+
+/* Стили для кнопок */
+.menu__button {
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    min-width: 280px;
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Стиль активной кнопки */
+.menu__button.active {
+    background-color: #A10D10;
+    color: white;
+    border-color: #A10D10;
+}
+
+/* При наведении */
+.menu__button:hover {
+    background-color: #A10D10;
+    color: white;
+}
+
+.menu__breakfast-div {
+    min-width: 620px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.menu__breakfast-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 300px;
+    padding-top: 20px;
+}
+
+.menu__breakfast-text-h5 {
+    font-size: 2.5rem;
+    color: white;
+    transition: font-size 0.5s ease;
+}
+
+.menu__breakfast-text-h5:hover {
+    font-size: 2.7rem;
+}
+
+.menu__breakfast-text-p {
+    font-size: 2.2rem;
+    color: white;
+    transition: font-size 0.5s ease;
+}
+
+.menu__breakfast-text-p:hover {
+    font-size: 2.4rem;
+}

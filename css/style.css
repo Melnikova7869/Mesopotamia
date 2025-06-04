@@ -1,0 +1,402 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html,
+body {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Medium', serif;
+    max-width: 2100px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+.header-all {
+    min-height: 810px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../image/Full-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 98px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.header__nav {
+    flex: 1;
+}
+
+.menu {
+    display: flex;
+    gap: 5.2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Verdana-Bold', sans-serif;
+    transition: color 0.3s;
+    display: inline-block;
+}
+
+.menu__link:hover {
+    color: #4b6eb9;
+}
+
+.logo {
+    flex: 1;
+    text-align: center;
+}
+
+.Mesopotamia {
+    color: white;
+    text-decoration: none;
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.header__title-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    z-index: 1;
+}
+
+.header_text_h1 {
+    font-size: 3.9rem;
+    max-width: 596px;
+    margin: 0 auto;
+}
+.menu__title {
+
+}
+
+main {
+   /*  background-color: #696565; */
+    background-image: url(/image/main.jpg);
+}
+
+.about {
+    padding-top: 20rem;
+}
+
+.about-title {
+    text-align: center;
+    font-size: 3.4rem;
+    color: white;
+    margin: 4rem 0;
+}
+
+.about-text {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 4rem;
+}
+
+.about-image {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.about-image-img {
+    width: 320px;
+}
+
+.about-dishes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 80px 0;
+    gap: 10rem;
+}
+
+.about-dishes-but {
+    width: 380px;
+    background-color: #A10D10;
+    border-radius: 40px;
+    border: none;
+    padding: 15px 0;
+}
+
+.about-dishes-but:hover {
+    background-color: #4d0c0e;
+}
+
+
+.about-dishes-but-a {
+    font-size: 3.4rem;
+    color: white;
+}
+
+.about-dishes-img-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.about-image-img-text {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.book-table-div {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.book-table-but {
+    width: 380px;
+    background-color: #A10D10;
+    border-radius: 40px;
+    border: none;
+    padding: 15px 0;
+    margin: 80px 0;
+}
+
+.book-table-but:hover {
+    background-color: #4d0c0e;
+}
+
+.book-table-but-a {
+    font-size: 3.4rem;
+    color: white;
+}
+
+.bard-section {
+    background-color: #812224;
+}
+
+.menu-alcohol {
+    display: flex;
+    flex-direction: row;
+    gap: 7rem;
+    padding: 12rem 0;
+}
+
+.menu-alcohol-img {
+    width: 550px;
+}
+
+.menu-alcohol-img-a {
+    font-size: 3rem;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+}
+
+.menu-alcohol-img-a-title {
+    font-size: 3rem;
+    color: white;
+    padding: 20px 0;
+}
+
+.menu-alcohol-img-a::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    height: 1px;
+    width: 100%;
+    background-color: currentColor;
+}
+
+.menu-alcohol-img-a:hover {
+    font-size: 3.3rem;
+    
+}
+
+.team-image {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+    gap: 10rem;
+    padding-bottom: 10rem;
+}
+
+.about-image-img-title {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.team-image-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.banquet {
+    padding: 4rem 0;
+}
+
+.div-banquet-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 1200px;
+    margin: 6rem auto;
+}
+
+.div-banquet {
+    min-height: 500px;
+    width: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.div-banquet:nth-child(1) {
+    background-image: url(../../image/event-photo.jpg);
+}
+
+.div-banquet:nth-child(2) {
+    background-image: url(../../image/Event-photo.png);
+}
+
+.div-banquet:nth-child(3) {
+    background-image: url(../../image/Event-photo1.png);
+}
+
+.div-banquet:nth-child(4) {
+    background-image: url(../../image/Event-photo2.png);
+}
+
+
+.banquets-link {
+    display: none;
+}
+
+.div-banquet:hover .banquets-link {
+    display: block;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.div-banquet:nth-child(1):hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../image/event-photo.jpg);
+}
+
+.div-banquet:nth-child(2):hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../image/Event-photo.png);
+}
+
+.div-banquet:nth-child(3):hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../image/Event-photo1.png);
+}
+
+.div-banquet:nth-child(4):hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../image/Event-photo2.png);
+}
+
+.request-button {
+    display: none;
+}
+
+.div-banquet:hover .request-button {
+    display: block;
+    width: 380px;
+    background-color: #A10D10;
+    border-radius: 40px;
+    border: none;
+    padding: 15px 0;
+    margin: 80px 0;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.div-banquet:hover .request-button:hover {
+    background-color: #4d0c0e;
+}
+
+.request-button-a {
+    font-size: 2.5rem;
+    color: white;
+}
+
+footer {
+    background-color: #812224;
+    height: 200px;
+    text-align: center;
+    margin: auto 0;
+}
+
+.right-side {
+    display: flex;
+    gap: 6rem;
+    justify-content: right;
+}
+
+.right-side-a {
+    width: 40px;
+}
+
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+}
+
+.footer__nav {
+    flex: 1;
+}
