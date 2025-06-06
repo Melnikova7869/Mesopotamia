@@ -11,6 +11,7 @@ body {
     box-sizing: border-box;
     font-family: 'Gilroy-Medium', serif;
     max-width: 2100px;
+    background-image: url(/image/main.jpg);
     margin: 0;
 }
 
@@ -107,12 +108,11 @@ a {
 .menu__title {
 
 }
-
+/* 
 main {
-   /*  background-color: #696565; */
     background-image: url(/image/main.jpg);
 }
-
+ */
 .about {
     padding-top: 20rem;
 }

@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="css/menu.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/banquet.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet">
     <title>Ресторан Mesopotamia</title>
 </head>
 
-<body>
+<body style="background: url('body-color.png') no-repeat center center fixed;">
     <header class="header-s">
         <div class="header">
             <div class="container">
                 <div class="header__inner">
-                    <nav class="header__nav">
+                    <nav class="header__  nav">
                         <ul class="menu">
                             <li class="menu__dropdown">
                                 <a class="menu__link" href="menu.html">Меню</a>
@@ -39,28 +40,37 @@
     <main>
         <section>
             <div class="container">
-                <h1 class="menu__title">МЕНЮ</h1>
-                <div class="menu__inner">
-                    <nav class="header__nav">
-                        <ul class="menua__menu">
-                            <li class="menu__dropdown">
-                                <button class="menu__button active" onclick="showSection('breakfast', event)">Турецкие
-                                    завтраки</button>
-                            </li>
-                            <li class="menu__dropdown">
-                                <button class="menu__button" onclick="showSection('hot', event)">Горячее и
-                                    гарниры</button>
-                            </li>
-                            <li><button class="menu__button" onclick="showSection('snacks', event)">Закуски</li></button>
-                            <li><button class="menu__button" onclick="showSection('salads', event)">Салаты</li></button>
-                        </ul>
-                    </nav>
-
+                <h1 class="menu__title">Банкеты</h1>
+                <div class="banquet-text">
+                    <p class="banquet-text-p">Организовываются Банкеты любой сложности и формата.</p>
+                    <p class="banquet-text-p">Меню для Банкета составляется по индивидуальному заказу гостя</p>
+                    <p class="banquet-text-p">Команда поваров, во главе с Шеф-поваром приготовит для Вас блюда
+                        изумительного вкуса и качества, а профессиональная команда официантов обслужит Ваш банкет на
+                        высшем уровне!</p>
                 </div>
-                <div id="menu-breakfast"></div>
-                <div id="menu-hot"></div>
-                <div id="menu-snacks"></div>
-                <div id="menu-salads"></div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="form-container" id="formContainer">
+                    <h2>Оставьте заявку и мы непременно Вам перезвоним</h2>
+                    <form id="banquetForm">
+                        <div class="error-message" id="errorMessage"></div>
+                        <input type="text" name="fullname" placeholder="Ф.И.О">
+                        <input type="text" name="date" placeholder="Дата проведения мероприятия">
+                        <input type="number" name="guests" placeholder="Количество гостей">
+                        <input type="tel" name="phone" placeholder="Номер телефона">
+                        <button type="submit">Оставить заявку</button>
+                    </form>
+
+                    <div class="success-message" id="successMessage">
+                        <h2>Спасибо, что выбрали нас!</h2>
+                        <p>Ваша заявка успешно отправлена. Мы свяжемся с вами в ближайшее время.</p>
+                        <button onclick="window.location.href='index.html'">На главную</button>
+                    </div>
+                </div>
+
+            </div>
             </div>
         </section>
     </main>
@@ -100,6 +110,7 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/form.js"></script>
 </body>
 
 </html>

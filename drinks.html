@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="css/drink.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet">
+    <title>Ресторан Mesopotamia</title>
+</head>
+
+<body>
+    <header class="header-s">
+        <div class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <nav class="header__nav">
+                        <ul class="menu">
+                            <li class="drink__dropdown">
+                                <a class="drink__link" href="menu.html">Меню</a>
+                            </li>
+                            <li class="drink__dropdown">
+                                <a class="drink__link" href="banquet.html">Банкеты</a>
+                            </li>
+                            <li><a class="drink__link" href="#footer">Контакты</a></li>
+                            <li><a class="drink__link" href="#">Мероприятия</a></li>
+                        </ul>
+                    </nav>
+                    <div class="logo">
+                        <a class="Mesopotamia" href="index.html">Mesopotamia</a>
+                    </div>
+                    <!-- Пустой div для балансировки -->
+                    <div style="flex: 1;"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <h1 class="drink__title">Барная карта </h1>
+                <p class="drink__title-p">Погрузитесь в мир изысканных вкусов и неповторимых 
+                    сочетаний в нашем барном меню. От классических коктейлей,
+                     приготовленных по проверенным временем рецептам, до авторских миксов, 
+                     созданных нашими талантливыми барменами, каждый напиток – это маленькое произведение 
+                     искусства, призванное удивлять и радовать.</p>
+                <div class="drink__inner">
+                    <nav class="header__nav">
+                        <ul class="drinka__drink">
+                            <li class="drink__dropdown">
+                                <button class="drink__button active" onclick="showSection('cocktail', event)">Коктели Б/А</button>
+                            </li>
+                            <li class="drink__dropdown">
+                                <button class="drink__button" onclick="showSection('wine', event)">Вина</button>
+                            </li>
+                            <li><button class="drink__button" onclick="showSection('hot', event)">Согревающие</li></button>
+                            <li><button class="drink__button" onclick="showSection('alcohol', event)">Коктейли</li></button>
+                        </ul>
+                    </nav>
+
+                </div>
+                <div id="drinks-coctail"></div>
+                <!-- <div id="drinks-wine"></div>
+                <div id="drinks-hot"></div>
+                <div id="drinks-alcohol"></div> -->
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <nav class="footer__nav">
+                    <ul class="menu">
+                        <li class="drink__dropdown">
+                            <a class="drink__link" href="menu.html">Меню</a>
+                        </li>
+                        <li class="drink__dropdown">
+                            <a class="drink__link" href="banquet.html">Банкеты</a>
+                        </li>
+                        <li><a class="drink__link" href="#footer">Контакты</a></li>
+                        <li><a class="drink__link" href="#">Мероприятия</a></li>
+                    </ul>
+                </nav>
+                <div class="logo">
+                    <a class="Mesopotamia" href="index.html">Mesopotamia</a>
+                </div>
+                <!-- Пустой div для балансировки -->
+               <!--  <div style="flex: 1;"></div> -->
+                <div class="right-side" style="flex: 1;">
+                    <a class="right-side-a" href="#"  aria-label="facebook"><img src="image/Vector.svg"></a>
+                    <a class="right-side-a" href="#" aria-label="instagram"><img src="image/Vector (1).svg">
+                    </a>
+                    <a class="right-side-a" href="#" aria-label="теллеграмм"><img src="image/Vector (2).svg">
+                    </a>
+                    <a class="right-side-a" href="#" aria-label="youtube"><img src="image/Vector (3).svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/drink.js"></script>
+</body>
+
+</html>
