@@ -92,3 +92,8 @@ form button:hover {
     margin-bottom: 15px;
     display: none;
 }
+
+@media (max-width: 480px) {
+    .banquet-text-p {
+        font-size: 2.6rem;
+    }}

@@ -185,3 +185,100 @@ main {
 .drink__breakfast-text-p:hover {
     font-size: 2.4rem;
 }
+
+
+
+@media (max-width: 480px) {
+    .header__inner {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    .header__nav {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .header__nav-drink {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .drink {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .drinka__drink {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .drink__button {
+        min-width: 80px;
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    .drink__title-p {
+        font-size: 2rem;
+    }
+
+    .drink__breakfast-div {
+        flex-direction: row;
+        align-items: center;
+        min-width: auto;
+        width: 100%;
+    }
+
+    .drink__breakfast__img {
+        width: 45%;
+        height: auto;
+    }
+
+    .drink__breakfast-text {
+        width: 45%;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .drink__breakfast-text-h5 {
+        font-size: 2rem;
+    }
+
+    .drink__breakfast-text-p {
+        font-size: 1.6rem;
+    }
+
+    .drink__title {
+        font-size: 2.2rem;
+        padding: 20px 0;
+    }
+
+    .logo {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .Mesopotamia {
+        font-size: 2.4rem;
+    }
+
+    .footer__inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .right-side {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
