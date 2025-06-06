@@ -1,30 +1,30 @@
-fetch('/drinks/drinks-coctail.html') // Путь от корня проекта!
+fetch('drinks-coctail.html')
   .then(response => response.text())
   .then(html => {
     document.getElementById('drinks-coctail').innerHTML = html;
   })
   .catch(err => console.error('Не удалось загрузить меню:', err));
 
-fetch('/menu-breakfast.html') // Путь от корня проекта!
+fetch('drinks-wine.html') 
   .then(response => response.text())
   .then(html => {
     document.getElementById('drinks-wine').innerHTML = html;
   })
   .catch(err => console.error('Не удалось загрузить меню:', err));
 
-fetch('/salads.html') // Путь от корня проекта!
+fetch('drinks-hot.html') 
   .then(response => response.text())
   .then(html => {
     document.getElementById('drinks-hot').innerHTML = html;
   })
   .catch(err => console.error('Не удалось загрузить меню:', err));
 
-fetch('/snacks.html') // Путь от корня проекта!
+fetch('/drinks-alcohol.html') 
   .then(response => response.text())
   .then(html => {
     document.getElementById('drinks-alcohol').innerHTML = html;
   })
-  .catch(err => console.error('Не удалось загрузить меню:', err));
+  .catch(err => console.error('Не удалось загрузить меню:', err)); 
 
 function showSection(id, event) {
     // 1. Убираем класс active у ВСЕХ кнопок
@@ -46,3 +46,5 @@ function showSection(id, event) {
         sectionToShow.classList.add('active');
     }
 }
+
+

@@ -18,4 +18,3 @@ function showSection(id, event) {
         sectionToShow.classList.add('active');
     }
 }
-
