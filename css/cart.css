@@ -1,0 +1,262 @@
+/* Основные стили корзины */
+.cart-section {
+    padding: 30px 0;
+}
+
+.cart-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.cart-items {
+    flex: 1;
+    min-width: 300px;
+}
+
+.cart-summary {
+    background: #f8f8f8;
+    padding: 25px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.cart-item {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #eaeaea;
+    align-items: center;
+}
+
+.cart-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-details h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}
+
+.cart-item-details p {
+    margin: 0 0 10px 0;
+    color: white;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.cart-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.quantity-btn {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.quantity-btn:hover {
+    background: #f0f0f0;
+}
+
+.quantity {
+    min-width: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.item-price {
+    margin-left: auto;
+    font-weight: bold;
+    color: #d4a762;
+    font-size: 16px;
+}
+
+.remove-item {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.3s;
+}
+
+.menu__title {
+    font-size: 3rem;
+    color: white;
+}
+
+.remove-item:hover {
+    color: #d4a762;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eaeaea;
+    font-size: 15px;
+}
+
+.summary-row.total {
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: none;
+    color: #333;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 15px;
+    background: #A10D10;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.checkout-btn:hover {
+    background: #A10D10;
+}
+
+.delivery-info {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: white;
+}
+
+.empty-cart {
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+}
+
+
+/* Уведомление о добавлении в корзину */
+.cart-notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #A10D10;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+
+.cart-notification.show {
+    opacity: 1;
+}
+
+/* Кнопка "Вернуться в меню" */
+.empty-cart {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.empty-cart .back-to-menu {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #A10D10;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.add-to-cart {
+    position: relative;
+    z-index: 10;
+    width: 200px;
+    background-color: #A10D10;
+    border-radius: 40px;
+    border: none;
+    padding: 15px 0;
+    margin: 80px 0;
+}
+
+.cart-notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #A10D10;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+
+.cart-notification.show {
+    opacity: 1;
+}
+
+.empty-cart .back-to-menu:hover {
+    background: #A10D10;
+}
+/* Мобильные стили */
+@media (max-width: 768px) {
+    .cart-container {
+        flex-direction: column;
+    }
+    
+    .cart-summary {
+        max-width: 100%;
+        order: -1;
+        margin-bottom: 30px;
+    }
+    
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .cart-item-image {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+    }
+    
+    .cart-item-controls {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .menu__title {
+        font-size: 2rem;
+    }
+}

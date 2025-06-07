@@ -1,40 +1,9 @@
-function showSection(id, event) {
-    // 1. Убираем класс active у ВСЕХ кнопок
-    document.querySelectorAll('.menu__button').forEach(button => {
-        button.classList.remove('active');
-    });
-
-    // 2. Добавляем active только нажатой кнопке
-    event.currentTarget.classList.add('active');
-
-    // 3. Скрываем ВСЕ разделы меню
-    document.querySelectorAll('.menu__breakfast').forEach(section => {
-        section.classList.remove('active');
-    });
-
-    // 4. Показываем нужный раздел
-    const sectionToShow = document.getElementById(id);
-    if (sectionToShow) {
-        sectionToShow.classList.add('active');
-    }
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-    const toggle = document.querySelector('.mobile-menu-toggle');
-    const nav = document.querySelector('.header__nav');
-
-    if (toggle && nav) {
-        toggle.addEventListener('click', function () {
-            nav.classList.toggle('active');
-        });
-    }
-});
 
 document.addEventListener('DOMContentLoaded', function () {
     // Мобильное меню
-    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-    if (mobileMenuToggle) {
-        mobileMenuToggle.addEventListener('click', function () {
+    const mobiledrinkToggle = document.querySelector('.mobile-drink-toggle');
+    if (mobiledrinkToggle) {
+        mobiledrinkToggle.addEventListener('click', function () {
             const nav = document.querySelector('.header__nav');
             nav.classList.toggle('active');
         });
@@ -91,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Закрытие мобильного меню при клике на пункт
-    document.querySelectorAll('.menu__link').forEach(link => {
+    document.querySelectorAll('.drink__link').forEach(link => {
         link.addEventListener('click', () => {
             const nav = document.querySelector('.header__nav');
             nav.classList.remove('active');
