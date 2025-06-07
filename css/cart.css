@@ -1,6 +1,7 @@
 /* Основные стили корзины */
 .cart-section {
     padding: 30px 0;
+    /* Добавил темный фон для контраста */
 }
 
 .cart-container {
@@ -16,19 +17,20 @@
 }
 
 .cart-summary {
-    background: #f8f8f8;
+    background: #2a2a2a; /* Темнее для контраста с текстом */
     padding: 25px;
     border-radius: 8px;
     width: 100%;
     max-width: 350px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    color: #fff; /* Белый текст */
 }
 
 .cart-item {
     display: flex;
     gap: 20px;
     padding: 20px 0;
-    border-bottom: 1px solid #eaeaea;
+    border-bottom: 1px solid #333; /* Темнее разделитель */
     align-items: center;
 }
 
@@ -39,6 +41,11 @@
     border-radius: 8px;
 }
 
+.menu__title {
+    color: white;
+    font-size: 2.3rem;
+}
+
 .cart-item-details {
     flex: 1;
 }
@@ -46,13 +53,13 @@
 .cart-item-details h3 {
     margin: 0 0 5px 0;
     font-size: 18px;
-    color: white;
+    color: #fff;
     font-weight: 600;
 }
 
 .cart-item-details p {
     margin: 0 0 10px 0;
-    color: white;
+    color: #ccc; /* Светло-серый для второстепенного текста */
     font-size: 14px;
     line-height: 1.4;
 }
@@ -67,8 +74,9 @@
 .quantity-btn {
     width: 30px;
     height: 30px;
-    border: 1px solid #ddd;
-    background: #fff;
+    border: 1px solid #444;
+    background: #333;
+    color: #fff;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
@@ -76,13 +84,14 @@
 }
 
 .quantity-btn:hover {
-    background: #f0f0f0;
+    background: #444;
 }
 
 .quantity {
     min-width: 20px;
     text-align: center;
     font-weight: 500;
+    color: #fff;
 }
 
 .item-price {
@@ -102,13 +111,8 @@
     transition: color 0.3s;
 }
 
-.menu__title {
-    font-size: 3rem;
-    color: white;
-}
-
 .remove-item:hover {
-    color: #d4a762;
+    color: #A10D10;
 }
 
 .summary-row {
@@ -116,15 +120,16 @@
     justify-content: space-between;
     margin-bottom: 15px;
     padding-bottom: 15px;
-    border-bottom: 1px solid #eaeaea;
+    border-bottom: 1px solid #444;
     font-size: 15px;
+    color: #fff;
 }
 
 .summary-row.total {
     font-weight: bold;
     font-size: 18px;
     border-bottom: none;
-    color: #333;
+    color: #fff;
 }
 
 .checkout-btn {
@@ -142,58 +147,36 @@
 }
 
 .checkout-btn:hover {
-    background: #A10D10;
+    background: #8a0b0e;
 }
 
 .delivery-info {
     text-align: center;
     margin-top: 15px;
     font-size: 14px;
-    color: white;
+    color: #ccc;
 }
 
 .empty-cart {
     text-align: center;
     padding: 50px 0;
-    color: white;
-}
-
-
-/* Уведомление о добавлении в корзину */
-.cart-notification {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #A10D10;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 4px;
-    opacity: 0;
-    transition: opacity 0.3s;
-    z-index: 1000;
-}
-
-.cart-notification.show {
-    opacity: 1;
-}
-
-/* Кнопка "Вернуться в меню" */
-.empty-cart {
-    text-align: center;
-    padding: 40px 0;
+    color: #fff;
 }
 
 .empty-cart .back-to-menu {
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 12px 24px;
     background: #A10D10;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: white;
     text-decoration: none;
     border-radius: 4px;
     transition: background 0.3s;
+}
+
+.empty-cart .back-to-menu:hover {
+    background: #8a0b0e;
 }
 
 .add-to-cart {
@@ -201,10 +184,17 @@
     z-index: 10;
     width: 200px;
     background-color: #A10D10;
+    color: white;
     border-radius: 40px;
     border: none;
-    padding: 15px 0;
-    margin: 80px 0;
+    padding: 12px 0;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-to-cart:hover {
+    background: #8a0b0e;
 }
 
 .cart-notification {
@@ -219,15 +209,13 @@
     opacity: 0;
     transition: opacity 0.3s;
     z-index: 1000;
+    pointer-events: none;
 }
 
 .cart-notification.show {
     opacity: 1;
 }
 
-.empty-cart .back-to-menu:hover {
-    background: #A10D10;
-}
 /* Мобильные стили */
 @media (max-width: 768px) {
     .cart-container {
@@ -258,5 +246,10 @@
     
     .menu__title {
         font-size: 2rem;
+    }
+    
+    .add-to-cart {
+        width: 100%;
+        margin: 15px 0;
     }
 }

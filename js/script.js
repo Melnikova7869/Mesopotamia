@@ -31,15 +31,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Мобильное меню
-    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-    if (mobileMenuToggle) {
-        mobileMenuToggle.addEventListener('click', function () {
-            const nav = document.querySelector('.header__nav');
-            nav.classList.toggle('active');
-        });
-    }
-
     // Улучшенный обработчик для корзины (делегирование событий)
     document.addEventListener('click', function (e) {
         if (e.target.classList.contains('add-to-cart')) {
